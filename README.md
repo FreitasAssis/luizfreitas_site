@@ -1,4 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Personal Website
+https://luiz-freitas.web.app/
+
+This site is using Firebase database. So, to use this project you need to configure yours like the docs (https://firebase.google.com/docs)
 
 ## Available Scripts
 
