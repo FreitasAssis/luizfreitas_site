@@ -2,17 +2,27 @@
   "name": "site",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "author": {
+    "name" : "Luiz Freitas",
+    "email" : "luiz_dev@outlook.com",
+    "url" : "https://luiz-freitas.web.app/"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "firebase": "^7.15.1",
+    "mdbreact": "^4.27.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-vertical-timeline-component": "^3.0.2",
+    "sweetalert": "^2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && firebase deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
