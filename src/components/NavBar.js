@@ -28,11 +28,23 @@ class NavBar extends React.Component {
             document.getElementById("navBar").classList.remove("navbar-dark")
             document.getElementById("navBar").classList.remove("mt-5")
             document.getElementById("navBar").classList.add("navbar-light")
-            if(window.screen.width < 768) document.getElementById("navBar").style.placeSelf = "baseline"
+            document.getElementById("navBar").style.left = "50%"
+            document.getElementById("navBar").style.transform = "translateX(-50%)"
+            if(window.screen.width < 768) {
+              document.getElementById("navBar").style.placeSelf = "baseline"
+              document.getElementById("navBar").style.left = ""
+              document.getElementById("navBar").style.transform = "none"
+            }
             document.getElementsByClassName("fa-envelope")[0].classList.remove("text-white")
             document.getElementsByClassName("fa-envelope")[0].classList.add("text-dark")
         } else {
-            if(window.screen.width < 768) document.getElementById("navBar").style.placeSelf = "baseline center"
+            if(window.screen.width < 768) {
+              document.getElementById("navBar").style.placeSelf = "baseline center"
+              document.getElementById("navBar").style.left = "50%"
+              document.getElementById("navBar").style.transform = "translateX(-50%)"
+            }
+            // document.getElementById("navBar").style.left = "0"
+            // document.getElementById("navBar").style.transform = "none"
             document.getElementById("navBar").style.zIndex = 20
             document.getElementById("navBar").style.position = "absolute"
             document.getElementById("navBar").style.backgroundColor = "transparent"
@@ -61,7 +73,7 @@ class NavBar extends React.Component {
   }
 
   toggleCollapse = () => {
-    if(this.state.isOpen === false && window.pageYOffset < window.screen.height) document.getElementsByClassName("navbar-nav")[0].classList.add("rgba-black-strong")
+    if(this.state.isOpen === false && window.pageYOffset < window.screen.height - 1) document.getElementsByClassName("navbar-nav")[0].classList.add("rgba-black-strong")
     else document.getElementsByClassName("navbar-nav")[0].classList.remove("rgba-black-strong")
     this.setState({ isOpen: !this.state.isOpen });
   }
