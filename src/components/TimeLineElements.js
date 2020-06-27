@@ -1,5 +1,6 @@
 import React from "react";
 import { VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { MDBBtn } from "mdbreact";
 import 'react-vertical-timeline-component/style.min.css';
 import firebase from '../firebase';
 
@@ -41,10 +42,11 @@ class TimeLineElements extends React.Component {
                     date={`${job.date_start.substring(0, 7)} / ${job.date_end === "Atualmente" ? job.date_end : job.date_end.substring(0, 7)}`}
                     iconStyle={{
                         background: 'transparent', color: '#fff',
-                        backgroundImage: `url(${job.url})`,
+                        backgroundImage: `url(${job.icon})`,
                         backgroundSize: "cover",
                         borderRadius: 0,
-                        boxShadow: "none"
+                        boxShadow: "none",
+                        // cursor: "pointer"
                     }}
                 >
                     <h3 className="vertical-timeline-element-title">{job.title}</h3>
@@ -52,6 +54,7 @@ class TimeLineElements extends React.Component {
                     {job.description.map((description, index) => (
                         <p key={index} className="text-left">{description}</p>
                     ))}
+                    <MDBBtn href={job.url} target="_blank" className={job.url === "" ? "d-none" : ""} color="white" outline>Visualizar</MDBBtn>
                 </VerticalTimelineElement>
             ))}
         </>

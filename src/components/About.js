@@ -42,7 +42,7 @@ class About extends React.Component {
                                 <MDBCardText>
                                     Casado, {this.state.idade} anos, músico e apaixonado por tecnologias inovadoras.<br/>
                                     Trabalho com programação há mais de {this.state.timeJob} anos, e nesse período participei de projetos variados, construção de sites, sistemas, aplicativos...<br/>
-                                    Um deles é a Boomer, onde comecei como estagiário na área de programação e hoje sou um dos sócios e dev full stack.<br/>
+                                    Um deles é a Boomer, onde comecei como estagiário na área de programação e hoje sou dev full stack.<br/>
                                     Microempreendedor, com o CNPJ: 36.124.707/0001-57. <br/>
                                     Quer saber mais? Na sequência detalho um pouco mais dos meus trabalhos.
                                 </MDBCardText>
