@@ -53,7 +53,7 @@ class Presentation extends React.Component {
                   </h3>
                   <MDBCol className="d-flex justify-content-center mt-4" md="12">
                     <MDBCol md="3" className="d-flex justify-content-around">
-                      <a href="https://www.linkedin.com/in/luiz-antonio-freitas-de-assis/"><MDBIcon
+                      <a href="https://www.linkedin.com/in/luiz-dev/"><MDBIcon
                         fab
                         icon="linkedin-in"
                         className="grey-text"
