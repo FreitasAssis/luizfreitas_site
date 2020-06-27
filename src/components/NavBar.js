@@ -73,7 +73,7 @@ class NavBar extends React.Component {
   }
 
   toggleCollapse = () => {
-    if(this.state.isOpen === false && window.pageYOffset < window.screen.height - 1) document.getElementsByClassName("navbar-nav")[0].classList.add("rgba-black-strong")
+    if(this.state.isOpen === false && window.pageYOffset < window.screen.height/2) document.getElementsByClassName("navbar-nav")[0].classList.add("rgba-black-strong")
     else document.getElementsByClassName("navbar-nav")[0].classList.remove("rgba-black-strong")
     this.setState({ isOpen: !this.state.isOpen });
   }
