@@ -42,7 +42,7 @@ class Skills extends React.Component {
                     <MDBCarouselItem key={index} itemId={index+1}>
                       <MDBView>
                         <img
-                          className="d-block p-3"
+                          className="d-block p-5 p-md-4"
                           style={{width: "auto", height: "10rem"}}
                           src={skill.url_icon}
                           alt={`Slide number ${index+1}`}
