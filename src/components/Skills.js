@@ -37,17 +37,17 @@ class Skills extends React.Component {
                 showIndicators={true}
                 className="z-depth-1"
               >
-                <MDBCarouselInner>
+                <MDBCarouselInner style={{height: "10rem"}}>
                   {this.state.skills.map((skill, index) => (
                     <MDBCarouselItem key={index} itemId={index+1}>
-                      <MDBView>
+                      <MDBView className="h-100">
                         <img
-                          className="d-block p-5 p-md-4"
+                          className="d-none d-md-block p-4 ml-5"
                           style={{width: "auto", height: "10rem"}}
                           src={skill.url_icon}
                           alt={`Slide number ${index+1}`}
                         />
-                        <MDBMask overlay="blue-grey-light" />
+                        <MDBMask overlay="blue-grey-strong" style={{height: "10rem"}} />
                       </MDBView>
                       <MDBCarouselCaption>
                         <h3 className={`h3-responsive ${skill.url_cert === "" ? "mb-5" : ""}`}>{skill.title}</h3>

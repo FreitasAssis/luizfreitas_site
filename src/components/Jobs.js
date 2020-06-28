@@ -26,7 +26,7 @@ class Jobs extends React.Component {
       <>
         <MDBContainer id="jobs" style={container} className="w-100 pl-0 pr-0 text-center">
           <MDBView className="h-100 text-white">
-            <img src={this.state.image} className="img-fluid w-100" alt="sample image" />
+            <img src={this.state.image} className="img-fluid w-100" alt="Jobs" />
             <MDBMask className="flex-center" pattern={6} overlay="red-strong" >
               <div className="w-100">
                 <h3 className="font-weight-bold m-2">
