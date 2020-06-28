@@ -18,7 +18,7 @@ class About extends React.Component {
     }
     render() {
         return (
-            <MDBContainer id="about" className="mt-5 text-center" style={{display: "grid"}}>
+            <MDBContainer id="about" className="mt-5 text-center" style={{display: "grid", height: "100vh"}}>
                 <div style={{
                     backgroundImage: `url(${this.state.imgUrl})`,
                     backgroundColor: "grey",
