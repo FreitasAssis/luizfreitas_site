@@ -42,8 +42,8 @@ class About extends React.Component {
                                 <MDBCardText>
                                     Casado, {this.state.idade} anos, músico e apaixonado por tecnologias inovadoras.<br/>
                                     Trabalho com programação há mais de {this.state.timeJob} anos, e nesse período participei de projetos variados, construção de sites, sistemas, aplicativos...<br/>
-                                    Atualmente atuando como dev full stack na Analytica.<br/>
-                                    Quer saber mais? Na sequência detalho um pouco mais dos meus trabalhos.
+                                    Atualmente estou na Analytica ajudando a revolucionar o sistema de ensino, atuando como dev full stack.<br/>
+                                    Quer saber mais? Na sequência detalho um pouco mais das minhas experiências.
                                 </MDBCardText>
                             </MDBCardBody>
                         </MDBJumbotron>
